@@ -2,8 +2,8 @@
 
 The Model layer is responsible for the 'business logic' part of the software.
 
-Patients' data is held in an inflammation table (2D array) where each row contains 
-inflammation data for a single patient taken over a number of days 
+Patients' data is held in an inflammation table (2D array) where each row contains
+inflammation data for a single patient taken over a number of days
 and each column represents a single day across all patients.
 """
 
@@ -41,4 +41,3 @@ def daily_min(data):
     :param data: A 2D data array with inflammation data.
     :returns: An array of minimum values of measurements."""
     return np.min(data, axis=0)
-
